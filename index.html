@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manise — Manis untuk Hati yang Hangat. Es krim, gelato, dan dessert beku buatan tangan dengan bahan lokal pilihan.">
+  <meta name="keywords" content="es krim, gelato, dessert, dessert beku, katering, jajanan manis, Magelang">
+  <meta name="author" content="Manise Desserts">
+  <meta property="og:title" content="Manise — Manis untuk Hati yang Hangat">
+  <meta property="og:description" content="Es krim, gelato, dan dessert beku buatan tangan dengan bahan lokal pilihan.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Manise — Manis untuk Hati yang Hangat</title>
+
+  <!-- Google Fonts: Lora + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="manise-style.css">
+<!--
+
+  Manise — Toko Dessert (Tugas Sekolah)
+  Layout dasar: TemplateMo 613 Frost Bakery (https://templatemo.com)
+  Dimodifikasi: konten Bahasa Indonesia, tema pastel girly, gambar baru, bagian video & peta.
+
+-->
+</head>
+<body>
+
+  <!-- ==========================================
+       Tombol Hamburger (Mobile)
+       ========================================== -->
+  <button class="hamburger" id="hamburger" aria-label="Buka/tutup menu navigasi" aria-expanded="false">
+    <div class="hamburger__lines">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <!-- Overlay Sidebar Mobile -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ==========================================
+       Navigasi Sidebar
+       ========================================== -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigasi utama">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">Ma<span>n</span>ise</div>
+      <div class="sidebar__tagline">Manis untuk Hati yang Hangat</div>
+    </div>
+
+    <nav class="sidebar__nav">
+      <ul>
+        <li><a href="#hero" class="active"><span class="nav-icon">&#9678;</span> Beranda</a></li>
+        <li><a href="#flavors"><span class="nav-icon">&#10047;</span> Rasa</a></li>
+        <li><a href="#builder"><span class="nav-icon">&#9733;</span> Racik Sendiri</a></li>
+        <li><a href="#catering"><span class="nav-icon">&#9738;</span> Katering</a></li>
+        <li><a href="#seasonal"><span class="nav-icon">&#10053;</span> Musiman</a></li>
+        <li><a href="#video"><span class="nav-icon">&#9658;</span> Video</a></li>
+        <li><a href="#lokasi"><span class="nav-icon">&#9873;</span> Lokasi</a></li>
+        <li><a href="#loyalty"><span class="nav-icon">&#10084;</span> Loyalti</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__footer">
+      <div class="sidebar__hours">
+        <strong>Jam Buka</strong><br>
+        Sen &ndash; Jum: 11.00 &ndash; 21.00<br>
+        Sab &ndash; Min: 10.00 &ndash; 22.00
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       Konten Utama
+       ========================================== -->
+  <main class="main">
+
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <div class="hero__badge reveal">Baru Buka</div>
+        <h1 class="hero__title reveal reveal-delay-1">
+          Hidup terlalu singkat untuk<br><em>dessert yang biasa.</em>
+        </h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+          Es krim dan gelato buatan tangan yang dibuat segar setiap pagi dengan susu lokal, buah musiman, dan sentuhan kejutan di setiap sendoknya.
+        </p>
+        <div class="hero__actions reveal reveal-delay-3">
+          <a href="#flavors" class="btn btn--primary">Lihat Menu Rasa</a>
+          <a href="#catering" class="btn btn--outline">Pesan Gerobak</a>
+        </div>
+      </div>
+
+      <!-- Dekorasi scoop es krim -->
+      <div class="hero__deco" aria-hidden="true">
+        <div class="scoop scoop--strawberry">
+          <div class="scoop--highlight"></div>
+        </div>
+        <div class="scoop scoop--mint">
+          <div class="scoop--highlight"></div>
+        </div>
+        <div class="scoop scoop--vanilla">
+          <div class="scoop--highlight"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= RODA RASA — Marquee ======= -->
+    <section class="section section--alt flavors-section" id="flavors">
+      <div class="section__header reveal">
+        <span class="section__label">Roda Rasa</span>
+        <h2 class="section__title">Pilih sendok favoritmu</h2>
+        <p class="section__desc">Dari rasa klasik abadi sampai eksperimen yang berganti tiap minggu, setiap rasa dibuat dalam jumlah kecil dengan bahan asli dan utuh.</p>
+      </div>
+
+      <!-- Baris 1: bergerak ke kiri -->
+      <div class="marquee">
+        <div class="marquee__track">
+          <!-- Set asli -->
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #fce4b8, #e6c68a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Vanila Tahiti</h3>
+              <p class="flavor-card__desc">Polong vanila tunggal diseduh dalam adonan custard berbahan krim organik. Kaya, harum bunga, dan tak pernah artifisial.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Populer</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #6b3a2a, #3e2118);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Truffle Cokelat Hitam</h3>
+              <p class="flavor-card__desc">Cokelat Belgia 70% kakao dilipat ke dalam adonan padat nan lembut dengan serutan truffle di setiap gigitan.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, var(--sage-light), var(--sage-dark));"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Cokelat Mint Segar</h3>
+              <p class="flavor-card__desc">Daun peppermint asli &mdash; bukan esens &mdash; dipadu susu organik dan serpihan cokelat hitam dari pembuat cokelat lokal.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Musiman</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #c9b3d6, #9b7eb8);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Madu Lavender</h3>
+              <p class="flavor-card__desc">Lavender Prancis kering diinfus ke madu bunga liar dan diaduk perlahan hingga lembut dengan aroma bunga.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #a8d8ea, #6bb7d4);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Kelapa Spirulina Biru</h3>
+              <p class="flavor-card__desc">Perpaduan spirulina dan santan kelapa bebas susu yang segar. Tropis, menyegarkan, dan biru alami.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #d4a76a, #b8863e);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Karamel Asin Pecan</h3>
+              <p class="flavor-card__desc">Karamel buatan sendiri diaduk dengan garam laut dan pecan manis renyah. Perpaduan manis-asin yang klasik.</p>
+            </div>
+          </div>
+
+          <!-- Set duplikat untuk loop mulus -->
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #fce4b8, #e6c68a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Vanila Tahiti</h3>
+              <p class="flavor-card__desc">Polong vanila tunggal diseduh dalam adonan custard berbahan krim organik. Kaya, harum bunga, dan tak pernah artifisial.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Populer</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #6b3a2a, #3e2118);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Truffle Cokelat Hitam</h3>
+              <p class="flavor-card__desc">Cokelat Belgia 70% kakao dilipat ke dalam adonan padat nan lembut dengan serutan truffle di setiap gigitan.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, var(--sage-light), var(--sage-dark));"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Cokelat Mint Segar</h3>
+              <p class="flavor-card__desc">Daun peppermint asli &mdash; bukan esens &mdash; dipadu susu organik dan serpihan cokelat hitam dari pembuat cokelat lokal.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Musiman</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #c9b3d6, #9b7eb8);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Madu Lavender</h3>
+              <p class="flavor-card__desc">Lavender Prancis kering diinfus ke madu bunga liar dan diaduk perlahan hingga lembut dengan aroma bunga.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #a8d8ea, #6bb7d4);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Kelapa Spirulina Biru</h3>
+              <p class="flavor-card__desc">Perpaduan spirulina dan santan kelapa bebas susu yang segar. Tropis, menyegarkan, dan biru alami.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #d4a76a, #b8863e);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Karamel Asin Pecan</h3>
+              <p class="flavor-card__desc">Karamel buatan sendiri diaduk dengan garam laut dan pecan manis renyah. Perpaduan manis-asin yang klasik.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baris 2: bergerak ke kanan -->
+        <div class="marquee__track marquee__track--reverse">
+          <!-- Set asli -->
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Baru</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f4a4b8, #e07a8a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Stroberi Basil</h3>
+              <p class="flavor-card__desc">Stroberi matang musim panas berpadu daun basil segar dalam sorbet bebas susu yang ringan dan harum.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #8b6f4e, #5c4632);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Remah Kukis Espresso</h3>
+              <p class="flavor-card__desc">Es krim espresso dua shot berlapis remah kukis cokelat dan pusaran karamel.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #e8d5a3, #c4a96a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Krim Pistachio</h3>
+              <p class="flavor-card__desc">Pistachio Sisilia panggang diolah menjadi gelato super lembut. Gurih, bermentega, dan autentik.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Vegan</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f7c59f, #ef8e38);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Mangga Markisa</h3>
+              <p class="flavor-card__desc">Mangga Alphonso matang dan markisa asam diaduk menjadi sorbet tropis cerah bebas susu.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f0c2c2, #d4868a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Raspberry Cokelat Putih</h3>
+              <p class="flavor-card__desc">Pusaran raspberry asam berpadu es krim cokelat putih lembut dengan taburan beri renyah.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #b6d7a8, #7ab55c);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Matcha Wijen Hitam</h3>
+              <p class="flavor-card__desc">Matcha kelas upacara dipadu pasta wijen hitam panggang. Earthy, gurih, dan memuaskan.</p>
+            </div>
+          </div>
+
+          <!-- Set duplikat untuk loop mulus -->
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Baru</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f4a4b8, #e07a8a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Stroberi Basil</h3>
+              <p class="flavor-card__desc">Stroberi matang musim panas berpadu daun basil segar dalam sorbet bebas susu yang ringan dan harum.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #8b6f4e, #5c4632);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Remah Kukis Espresso</h3>
+              <p class="flavor-card__desc">Es krim espresso dua shot berlapis remah kukis cokelat dan pusaran karamel.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #e8d5a3, #c4a96a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Krim Pistachio</h3>
+              <p class="flavor-card__desc">Pistachio Sisilia panggang diolah menjadi gelato super lembut. Gurih, bermentega, dan autentik.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__tag">Vegan</div>
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f7c59f, #ef8e38);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Sorbet</span>
+              <h3 class="flavor-card__name">Mangga Markisa</h3>
+              <p class="flavor-card__desc">Mangga Alphonso matang dan markisa asam diaduk menjadi sorbet tropis cerah bebas susu.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #f0c2c2, #d4868a);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Es Krim</span>
+              <h3 class="flavor-card__name">Raspberry Cokelat Putih</h3>
+              <p class="flavor-card__desc">Pusaran raspberry asam berpadu es krim cokelat putih lembut dengan taburan beri renyah.</p>
+            </div>
+          </div>
+
+          <div class="flavor-card">
+            <div class="flavor-card__swatch" style="background: radial-gradient(circle at 35% 35%, #b6d7a8, #7ab55c);"></div>
+            <div class="flavor-card__info">
+              <span class="flavor-card__type">Gelato</span>
+              <h3 class="flavor-card__name">Matcha Wijen Hitam</h3>
+              <p class="flavor-card__desc">Matcha kelas upacara dipadu pasta wijen hitam panggang. Earthy, gurih, dan memuaskan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= RACIK SENDIRI ======= -->
+    <section class="section builder" id="builder">
+      <div class="section__header reveal">
+        <span class="section__label">Racik Sendiri</span>
+        <h2 class="section__title">Sundae-mu, aturanmu</h2>
+        <p class="section__desc">Ikuti empat langkah meracik sundae di konter atau pesan dulu untuk diambil. Lebih dari 2.000 kombinasi untuk dicoba.</p>
+      </div>
+
+      <div class="builder__layout">
+        <div class="builder__steps">
+          <!-- Langkah 1 -->
+          <div class="builder-step reveal">
+            <div class="builder-step__num">1</div>
+            <div>
+              <h3 class="builder-step__title">Pilih Dasarmu</h3>
+              <p class="builder-step__text">Es krim, gelato, yogurt beku, atau sorbet bebas susu. Pilih satu, dua, atau ketiganya untuk mangkuk paling juara.</p>
+            </div>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div class="builder-step reveal reveal-delay-1">
+            <div class="builder-step__num">2</div>
+            <div>
+              <h3 class="builder-step__title">Pilih Wadahmu</h3>
+              <p class="builder-step__text">Cone waffle klasik, mangkuk gula buatan tangan, gelas, atau mega cone celup cokelat andalan kami.</p>
+            </div>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div class="builder-step reveal reveal-delay-2">
+            <div class="builder-step__num">3</div>
+            <div>
+              <h3 class="builder-step__title">Tumpuk Toppingnya</h3>
+              <p class="builder-step__text">Oreo remuk, kelapa panggang, pecan manis, beri segar, potongan brownies, mochi, dan 20 lainnya.</p>
+            </div>
+          </div>
+
+          <!-- Langkah 4 -->
+          <div class="builder-step reveal reveal-delay-3">
+            <div class="builder-step__num">4</div>
+            <div>
+              <h3 class="builder-step__title">Siram &amp; Sempurnakan</h3>
+              <p class="builder-step__text">Cokelat panas, saus karamel, siraman matcha, coulis raspberry, atau madu &mdash; plus taburan garam laut atau glitter makanan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pratinjau Visual -->
+        <div class="builder__preview reveal">
+          <div class="builder__preview-bowl">
+            <div class="builder__preview-scoop1"></div>
+            <div class="builder__preview-scoop2"></div>
+            <div class="builder__preview-scoop3"></div>
+          </div>
+          <p class="builder__preview-text">Sundae Racik Sendiri</p>
+          <p class="builder__preview-price">Mulai Rp 35.000</p>
+          <p class="builder__preview-note">Dasar + 3 topping sudah termasuk</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= GEROBAK KATERING ======= -->
+    <section class="section section--alt" id="catering">
+      <div class="section__header reveal">
+        <span class="section__label">Sewa Gerobak Katering</span>
+        <h2 class="section__title">Bawa manisnya ke acaramu</h2>
+        <p class="section__desc">Gerobak vintage kami datang lengkap dengan pilihan rasa, petugas penyendok yang ramah, dan semua topping impian para tamumu.</p>
+      </div>
+
+      <div class="catering__grid">
+        <!-- Gerobak 1: Mini -->
+        <div class="cart-card reveal">
+          <div class="cart-card__visual">
+            <img src="https://images.unsplash.com/photo-1620418035234-730f54778fd0?w=900&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Es krim pink dalam toples untuk pesta kecil" loading="lazy">
+            <span class="cart-card__visual-label">Intim</span>
+          </div>
+          <div class="cart-card__body">
+            <h3 class="cart-card__name">Gerobak Mini</h3>
+            <p class="cart-card__desc">Pas untuk pesta ulang tahun, baby shower, dan perayaan kantor kecil. Gerobak ringkas, rasa melimpah.</p>
+            <div class="cart-card__details">
+              <span class="cart-card__detail">Hingga 30 tamu</span>
+              <span class="cart-card__detail">3 rasa</span>
+              <span class="cart-card__detail">2 jam</span>
+            </div>
+            <div class="cart-card__price">Rp 1.750.000 <small>/ acara</small></div>
+          </div>
+        </div>
+
+        <!-- Gerobak 2: Klasik -->
+        <div class="cart-card reveal reveal-delay-1">
+          <div class="cart-card__visual">
+            <img src="https://images.unsplash.com/photo-1644161170685-2f5678222db8?w=900&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Toko es krim pink yang manis dan menggemaskan" loading="lazy">
+            <span class="cart-card__visual-label">Paling Populer</span>
+          </div>
+          <div class="cart-card__body">
+            <h3 class="cart-card__name">Gerobak Klasik</h3>
+            <p class="cart-card__desc">Pengalaman gerobak vintage andalan kami. Ideal untuk pernikahan, acara perusahaan, dan festival akhir pekan.</p>
+            <div class="cart-card__details">
+              <span class="cart-card__detail">Hingga 100 tamu</span>
+              <span class="cart-card__detail">6 rasa</span>
+              <span class="cart-card__detail">3 jam</span>
+              <span class="cart-card__detail">Bar topping</span>
+            </div>
+            <div class="cart-card__price">Rp 3.750.000 <small>/ acara</small></div>
+          </div>
+        </div>
+
+        <!-- Gerobak 3: Mewah -->
+        <div class="cart-card reveal reveal-delay-2">
+          <div class="cart-card__visual">
+            <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=900&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Sajian dessert macaron warna pastel untuk acara premium" loading="lazy">
+            <span class="cart-card__visual-label">Premium</span>
+          </div>
+          <div class="cart-card__body">
+            <h3 class="cart-card__name">Parlor Mewah</h3>
+            <p class="cart-card__desc">Pengalaman lengkap &mdash; gerobak ganda dengan stasiun gelato, bar waffle, dan koordinator acara khusus.</p>
+            <div class="cart-card__details">
+              <span class="cart-card__detail">Hingga 250 tamu</span>
+              <span class="cart-card__detail">10 rasa</span>
+              <span class="cart-card__detail">4 jam</span>
+              <span class="cart-card__detail">Bar waffle</span>
+              <span class="cart-card__detail">Koordinator</span>
+            </div>
+            <div class="cart-card__price">Rp 7.000.000 <small>/ acara</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= EDISI MUSIMAN — Tab ======= -->
+    <section class="section" id="seasonal">
+      <div class="section__header reveal">
+        <span class="section__label">Edisi Terbatas</span>
+        <h2 class="section__title">Rasa musiman, sekejap &amp; segar</h2>
+        <p class="section__desc">Setiap musim menghadirkan rangkaian edisi kecil yang terinspirasi dari yang sedang matang, yang ada di udara, dan sedikit nostalgia.</p>
+      </div>
+
+      <!-- Tab Musim -->
+      <div class="seasonal-tabs reveal" role="tablist">
+        <button class="seasonal-tab is-active" data-season="spring" role="tab" aria-selected="true" aria-controls="panel-spring">
+          <span class="seasonal-tab__icon" aria-hidden="true">&#127800;</span> Musim Semi
+        </button>
+        <button class="seasonal-tab" data-season="summer" role="tab" aria-selected="false" aria-controls="panel-summer">
+          <span class="seasonal-tab__icon" aria-hidden="true">&#9728;</span> Musim Panas
+        </button>
+        <button class="seasonal-tab" data-season="autumn" role="tab" aria-selected="false" aria-controls="panel-autumn">
+          <span class="seasonal-tab__icon" aria-hidden="true">&#127810;</span> Musim Gugur
+        </button>
+        <button class="seasonal-tab" data-season="winter" role="tab" aria-selected="false" aria-controls="panel-winter">
+          <span class="seasonal-tab__icon" aria-hidden="true">&#10052;</span> Musim Dingin
+        </button>
+      </div>
+
+      <!-- Panel Tab -->
+      <div class="seasonal-panels reveal">
+
+        <!-- Panel Musim Semi -->
+        <div class="seasonal-panel is-active" id="panel-spring" role="tabpanel">
+          <div class="seasonal-panel__visual">
+            <img src="https://images.unsplash.com/photo-1705103654884-cbd03d95761a?w=900&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Gelato almond sakura dengan latar pink lembut" loading="lazy">
+            <span class="seasonal-panel__badge">Tersedia Mar &ndash; Mei</span>
+          </div>
+          <div class="seasonal-panel__details">
+            <span class="seasonal-panel__season-label">Koleksi Musim Semi</span>
+            <h3 class="seasonal-panel__name">Sakura Almond</h3>
+            <p class="seasonal-panel__desc">Gelato almond beraroma bunga dengan kelopak sakura manis dan sentuhan air mawar. Ringan, harum, dan bagai berjalan di kebun yang sedang mekar.</p>
+            <div class="seasonal-panel__meta">
+              <span class="seasonal-panel__meta-tag"><span>&#127846;</span> Gelato</span>
+              <span class="seasonal-panel__meta-tag"><span>&#10024;</span> Edisi Terbatas</span>
+              <span class="seasonal-panel__meta-tag"><span>&#127793;</span> Info Alergi Kacang</span>
+            </div>
+            <a href="#hero" class="btn btn--primary seasonal-panel__cta">Coba Sekarang</a>
+          </div>
+        </div>
+
+        <!-- Panel Musim Panas -->
+        <div class="seasonal-panel" id="panel-summer" role="tabpanel">
+          <div class="seasonal-panel__visual">
+            <img src="https://images.unsplash.com/photo-1586985289384-c114b07442d0?w=900&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Sorbet mangga cabai jeruk nipis dengan buah tropis" loading="lazy">
+            <span class="seasonal-panel__badge">Tersedia Jun &ndash; Agu</span>
+          </div>
+          <div class="seasonal-panel__details">
+            <span class="seasonal-panel__season-label">Koleksi Musim Panas</span>
+            <h3 class="seasonal-panel__name">Mangga Cabai Jeruk Nipis</h3>
+            <p class="seasonal-panel__desc">Sorbet mangga Alphonso manis ditaburi bumbu cabai-jeruk nipis dan remah kulit jeruk nipis. Perpaduan pedas tropis dan manis beku &mdash; rasa comeback paling dicari.</p>
+            <div class="seasonal-panel__meta">
+              <span class="seasonal-panel__meta-tag"><span>&#127847;</span> Sorbet</span>
+              <span class="seasonal-panel__meta-tag"><span>&#127793;</span> Bebas Susu</span>
+              <span class="seasonal-panel__meta-tag"><span>&#127798;</span> Pedas Ringan</span>
+            </div>
+            <a href="#hero" class="btn btn--primary seasonal-panel__cta">Coba Sekarang</a>
+          </div>
+        </div>
+
+        <!-- Panel Musim Gugur -->
+        <div class="seasonal-panel" id="panel-autumn" role="tabpanel">
+          <div class="seasonal-panel__visual">
+            <img src="https://images.unsplash.com/photo-1620418035234-730f54778fd0?w=901&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Es krim labu chai dengan rempah musim gugur" loading="lazy">
+            <span class="seasonal-panel__badge">Tersedia Sep &ndash; Nov</span>
+          </div>
+          <div class="seasonal-panel__details">
+            <span class="seasonal-panel__season-label">Koleksi Musim Gugur</span>
+            <h3 class="seasonal-panel__name">Pusaran Labu Chai</h3>
+            <p class="seasonal-panel__desc">Es krim labu berbumbu dipusar dengan karamel chai masala dan taburan biji labu panggang. Hangat, nyaman, dan alasan sempurna untuk menambah satu sendok lagi.</p>
+            <div class="seasonal-panel__meta">
+              <span class="seasonal-panel__meta-tag"><span>&#127846;</span> Es Krim</span>
+              <span class="seasonal-panel__meta-tag"><span>&#10024;</span> Favorit</span>
+              <span class="seasonal-panel__meta-tag"><span>&#127869;</span> Mengandung Susu</span>
+            </div>
+            <a href="#hero" class="btn btn--primary seasonal-panel__cta">Coba Sekarang</a>
+          </div>
+        </div>
+
+        <!-- Panel Musim Dingin -->
+        <div class="seasonal-panel" id="panel-winter" role="tabpanel">
+          <div class="seasonal-panel__visual">
+            <img src="https://images.unsplash.com/photo-1644161170685-2f5678222db8?w=901&amp;h=700&amp;fit=crop&amp;q=80&amp;auto=format" alt="Es krim brownies peppermint dengan potongan cokelat" loading="lazy">
+            <span class="seasonal-panel__badge">Tersedia Des &ndash; Feb</span>
+          </div>
+          <div class="seasonal-panel__details">
+            <span class="seasonal-panel__season-label">Koleksi Musim Dingin</span>
+            <h3 class="seasonal-panel__name">Brownies Peppermint Bark</h3>
+            <p class="seasonal-panel__desc">Es krim cokelat peppermint penuh potongan brownies lembut dan pecahan peppermint bark cokelat putih. Kemewahan liburan di setiap gigitan.</p>
+            <div class="seasonal-panel__meta">
+              <span class="seasonal-panel__meta-tag"><span>&#127846;</span> Es Krim</span>
+              <span class="seasonal-panel__meta-tag"><span>&#127876;</span> Spesial Liburan</span>
+              <span class="seasonal-panel__meta-tag"><span>&#10024;</span> Edisi Terbatas</span>
+            </div>
+            <a href="#hero" class="btn btn--primary seasonal-panel__cta">Coba Sekarang</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= VIDEO — Di Balik Layar ======= -->
+    <section class="section section--alt" id="video">
+      <div class="section__header reveal">
+        <span class="section__label">Di Balik Layar</span>
+        <h2 class="section__title">Lihat cara kami membuatnya</h2>
+        <p class="section__desc">Dari susu segar sampai sendok terakhir &mdash; intip proses pembuatan es krim small-batch kami.</p>
+      </div>
+
+      <div class="video-wrap reveal">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/mQU_LMrf0Os"
+            title="Proses pembuatan es krim"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">Video: bagaimana es krim dibuat &mdash; dari adonan hingga jadi camilan favoritmu.</p>
+      </div>
+    </section>
+
+    <!-- ======= LOKASI — Maps ======= -->
+    <section class="section" id="lokasi">
+      <div class="section__header reveal">
+        <span class="section__label">Kunjungi Kami</span>
+        <h2 class="section__title">Mampir ke toko kami</h2>
+        <p class="section__desc">Datang dan cicipi langsung di toko kami. Kami tunggu, ya!</p>
+      </div>
+
+      <div class="location__layout reveal">
+        <div class="location__info">
+          <div class="location__item">
+            <h4>Alamat</h4>
+            <p>Jl. Pemuda No. 12, Magelang,<br>Jawa Tengah 56117</p>
+          </div>
+          <div class="location__item">
+            <h4>Jam Buka</h4>
+            <p>Senin &ndash; Jumat: 11.00 &ndash; 21.00<br>Sabtu &ndash; Minggu: 10.00 &ndash; 22.00</p>
+          </div>
+          <div class="location__item">
+            <h4>Kontak</h4>
+            <p>Telepon: (0293) 123-456<br>Email: halo@manise.id</p>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Magelang+Jawa+Tengah" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Buka di Google Maps</a>
+        </div>
+
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps?q=Magelang,+Jawa+Tengah&amp;output=embed"
+            title="Peta lokasi toko Manise di Magelang"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= KARTU STEMPEL LOYALTI ======= -->
+    <section class="section section--alt loyalty" id="loyalty">
+      <div class="section__header reveal">
+        <span class="section__label">Manise Rewards</span>
+        <h2 class="section__title">Tiap sendok mendekatkanmu</h2>
+        <p class="section__desc">Ambil kartu stempel di kunjungan berikutnya. Sepuluh stempel dapat satu sendok gratis &mdash; plus bonus di sepanjang jalan.</p>
+      </div>
+
+      <div class="loyalty__layout">
+        <div class="loyalty__info reveal">
+          <div class="loyalty__perks">
+            <div class="perk">
+              <div class="perk__icon">&#10003;</div>
+              <p class="perk__text"><strong>Stempel ke-5:</strong> Upgrade topping gratis untuk sundae atau cone apa pun &mdash; tambah brownies sekalian.</p>
+            </div>
+            <div class="perk">
+              <div class="perk__icon">&#10003;</div>
+              <p class="perk__text"><strong>Stempel ke-10:</strong> Satu sendok gratis rasa apa pun, termasuk musiman dan edisi terbatas.</p>
+            </div>
+            <div class="perk">
+              <div class="perk__icon">&#10003;</div>
+              <p class="perk__text"><strong>Bonus ulang tahun:</strong> Tunjukkan KTP di bulan ulang tahunmu dan dapatkan upgrade cone waffle gratis seminggu penuh.</p>
+            </div>
+            <div class="perk">
+              <div class="perk__icon">&#10003;</div>
+              <p class="perk__text"><strong>Hadiah referral:</strong> Ajak teman yang membuat kartu baru, kalian berdua dapat bonus stempel.</p>
+            </div>
+          </div>
+
+          <a href="#hero" class="btn btn--sage" style="margin-top: 2rem;">Mulai Kumpulkan</a>
+        </div>
+
+        <!-- Visual Kartu Stempel -->
+        <div class="stamp-card reveal reveal-delay-1">
+          <div class="stamp-card__header">
+            <span class="stamp-card__title">Kartu Stempelmu</span>
+            <span class="stamp-card__count">7 / 10</span>
+          </div>
+          <div class="stamp-card__grid">
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp stamp--reward stamp--filled">&#9733;</div>
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp stamp--filled">&#127846;</div>
+            <div class="stamp">&#127846;</div>
+            <div class="stamp">&#127846;</div>
+            <div class="stamp stamp--reward">GRATIS</div>
+          </div>
+          <p class="stamp-card__footer">3 sendok lagi menuju traktiran gratismu!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Ma<span>n</span>ise</div>
+          <p class="footer__copy">Es krim dan gelato small-batch, dibuat dengan tangan setiap hari di dapur kami. Dibuat dengan cinta, disajikan dengan senyum.</p>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#flavors">Rasa</a></li>
+              <li><a href="#builder">Racik Sendiri</a></li>
+              <li><a href="#seasonal">Sendok Musiman</a></li>
+              <li><a href="#catering">Katering</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="#">Cerita Kami</a></li>
+              <li><a href="#">Sumber Bahan</a></li>
+              <li><a href="#">Karier</a></li>
+              <li><a href="#">Pers</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Terhubung</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="mailto:halo@manise.id">halo@manise.id</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Manise Desserts. Hak cipta dilindungi. Layout dasar oleh <a href="https://templatemo.com" target="_blank" rel="noopener noreferrer">TemplateMo</a>, dimodifikasi untuk tugas sekolah.</p>
+      </div>
+    </footer>
+
+  </main>
+  <script src="manise-script.js"></script>
+</body>
+</html>
